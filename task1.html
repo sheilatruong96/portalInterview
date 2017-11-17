@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<script>
+var count = 0;
+function changeColors() {
+	if (count == 0){
+		document.getElementById("change").style.color="yellow";
+        count = 1;
+    }
+    else {
+    	document.getElementById("change").style.color="blue";
+        count=0;
+    }
+    
+}
+
+</script>
+
+<button id="btn" onclick="changeColors()">Press me to change text color</button>
+<p id="change" style="color:blue">Hello World!</p>
+
+</body>
+</html>
